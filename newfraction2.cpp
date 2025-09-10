@@ -1,9 +1,9 @@
-//create implementation for newfraction1 class
+//create implementation for newfraction2 class
 //Devan Ballantine
 //kd1958lj
 //09/04/2025
 //Dr. Jie Hu Meichsner
-#include "newfraction1.h"
+#include "newfraction2.h"
 #include <iostream>
 //sets intial numerator and denominator
 fraction::fraction(double init_top, double init_bot) {
@@ -50,3 +50,13 @@ fraction get_quotient( fraction f1,  fraction f2){
     f3.set_bot(f1.get_bot() * f2.get_top());
     return f3;
 }
+ostream& operator <<(ostream& outs, const fraction& source)
+    {
+		outs << "(" << source.get_top( ) <<", "<< source.get_bot( )<<") ";
+		return outs;
+    }
+istream& operator >>(istream& ins, fraction& target)
+    {
+		ins >> target.top >> target.bot;
+		return ins;
+    }

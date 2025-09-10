@@ -1,4 +1,4 @@
-//create header for newfraction1 class
+//create header for newfraction2 class
 //Devan Ballantine
 //kd1958lj
 //09/04/2025
@@ -34,6 +34,12 @@ class fraction {
     void post(){
         std::cout<< "" <<top << " / " << bot << std::endl;
     }
+    //gets the sum of two fractions
+    fraction get_sum( fraction f1,  fraction f2);
+    //gets the difference of two fractions
+    fraction get_difference( fraction f1,  fraction f2);
+    //inputs new values to fraction
+    friend istream& operator >>(istream& ins, fraction& target);
 
     private:
     //private variable area
@@ -41,12 +47,12 @@ class fraction {
 
     double bot;
 };
-//gets the sum of two fractions
-fraction get_sum( fraction f1,  fraction f2);
-//gets the difference of two fractions
-fraction get_difference( fraction f1,  fraction f2);
 //gets the product of two fractions
 fraction get_product( fraction f1,  fraction f2);
 //gets the quotient of two fractions
 fraction get_quotient( fraction f1,  fraction f2);
+//outputs the fraction
+void new_output(fraction f1);
+
+
 #endif

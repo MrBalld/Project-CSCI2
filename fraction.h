@@ -1,4 +1,4 @@
-//create test for fraction class
+//create header for fraction class
 //Devan Ballantine
 //kd1958lj
 //09/04/2025

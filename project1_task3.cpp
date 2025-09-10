@@ -1,10 +1,10 @@
-//create test for newfraction1 class
+//create test for newfraction2 class
 //Devan Ballantine
 //kd1958lj
 //09/04/2025
 //Dr. Jie Hu Meichsner
 #include<iostream>
-#include "newfraction1.h"
+#include "newfraction2.h"
 
 using namespace std;
 
@@ -20,9 +20,9 @@ int main() {
 
     fraction f2(1, 2);
     fraction f3(1,1);
-    f3 = get_sum(f1,f2);
+    f3 = f3.get_sum(f1,f2);
     f3.post();
-    f3 = get_difference(f1,f2);
+    f3 = f3.get_difference(f1,f2);
     f3.post();
     f3 = get_product(f1,f2);
     f3.post();
